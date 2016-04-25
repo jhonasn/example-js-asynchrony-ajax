@@ -12,13 +12,13 @@ Sample to-do list web app created to teach about javascript asynchrony and ajax 
 Text Editor: Atom - https://atom.io
 
 ##Server Side:
-JavaScript server side: Node.js - http://nodejs.org
-JavaScript debugger: Node Inspector - https://www.npmjs.com/package/node-inspector
-Framework web/REST: Express.js 4 - http://expressjs.com/en/guide/migrating-4.html
-Template Engine: Express Handlebars - https://www.npmjs.com/package/express-handlebars
-DataBase: Mongo DB - https://www.mongodb.org
-ODM Library Mongo DB: Mongoose - http://mongoosejs.com
+ - JavaScript server side: [Node.js](http://nodejs.org)
+ - JavaScript debugger: [Node Inspector](https://www.npmjs.com/package/node-inspector)
+ - Framework web/REST: [Express.js 4](http://expressjs.com/en/guide/migrating-4.html)
+ - Template Engine: [Express Handlebars](https://www.npmjs.com/package/express-handlebars)
+ - DataBase: [Mongo DB](https://www.mongodb.org)
+ - ODM Library Mongo DB: [Mongoose](http://mongoosejs.com)
 
 ##Client Side:
-Styles: Materialize CSS - http://materializecss.com
-Library to manipulate DOM: jQuery - https://jquery.com
+ - Styles: Materialize CSS - http://materializecss.com
+ - Library to manipulate DOM: jQuery - https://jquery.com
