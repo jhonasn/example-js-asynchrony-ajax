@@ -1,0 +1,38 @@
+<div class="progress" style="display: none;">
+    <div class="indeterminate"></div>
+</div>
+
+<main class="container" data-engine="true">
+    <!-- <template class="tarefa">            
+        </template> -->
+    <section class="lista-tarefas row">
+        <form name="nova-tarefa">
+            <h4>Nova Tarefa:</h4>
+            <input type="hidden" name="_id" value="">
+            <input type="hidden" name="concluida" value="">
+            <input type="hidden" name="dataCriacao" value="">
+            <div class="col m4">
+                <input type="text" name="titulo" placeholder="Título">
+            </div>
+            <div class="col m7">
+                <textarea name="descricao" class="materialize-textarea" rows="1" placeholder="Descrição"></textarea>
+            </div>
+            <div class="col m1">
+                <button type="button" class="confirmar btn btn-success" onclick="ProjetoAula.adicionarTarefa()">
+                    Salvar <i class="material-icons left">cloud</i>
+                </button>
+                <button type="button" class="cancelar btn" onclick="ProjetoAula.limparNovaTarefa()" style="display: none;">
+                    Cancelar
+                </button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col m12">
+                <ul class="tarefas">
+                    {{> tarefas}}
+                </ul>
+            </div>
+        </div>
+    </section>    
+
+</main>

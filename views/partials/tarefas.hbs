@@ -1,0 +1,24 @@
+{{# each tarefas}}
+<li itemid="{{ _id }}">
+    <div class="row">
+        <div class="col m1">
+            <input type="checkbox" id="ck_{{ _id }}" class="concluida filled-in" onchange="ProjetoAula.concluirTarefa(this)" {{# if concluida }} checked {{/if}} />
+            <label for="ck_{{ _id }}"></label>
+        </div>
+        <div class="col m3">
+            <span class="titulo" onclick="ProjetoAula.iniciarAlteracaoTarefa(this)">{{ titulo }}</span>
+        </div>
+        <div class="col m5">
+            <p class="descricao" onclick="ProjetoAula.iniciarAlteracaoTarefa(this)">{{ descricao }}</p>
+        </div>
+        <div class="col m2">
+            <span class="dataCriacao" onclick="ProjetoAula.iniciarAlteracaoTarefa(this)">{{ formatarData dataCriacao }}</span>
+        </div>
+        <div class="col m1">
+            <button class="deletar btn red lighten-1 waves-effect" onclick="ProjetoAula.remover(this)">
+                <i class="material-icons">delete</i>
+            </button>
+        </div>
+    </div>
+</li>
+{{/each}}

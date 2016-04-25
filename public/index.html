@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aula de JavaScript Assíncrono e Resolução de Dúvidas</title>
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="progress" style="display: none;">
+        <div class="indeterminate"></div>
+    </div>
+    <main class="container">
+        <template class="tarefa">
+            <li itemid="">
+                <div class="row">
+                    <div class="col m1">
+                        <input type="checkbox" id="" class="concluida filled-in" onchange="ProjetoAula.concluirTarefa(this)" />
+                        <label for="" class="concluida"></label>
+                    </div>
+                    <div class="col m3">
+                        <span class="titulo" onclick="ProjetoAula.iniciarAlteracaoTarefa(this)"></span>
+                    </div>
+                    <div class="col m5">
+                        <p class="descricao" onclick="ProjetoAula.iniciarAlteracaoTarefa(this)"></p>
+                    </div>
+                    <div class="col m2">
+                        <span class="dataCriacao" onclick="ProjetoAula.iniciarAlteracaoTarefa(this)"></span>
+                    </div>
+                    <div class="col m1">
+                        <button class="deletar btn red lighten-1 waves-effect" onclick="ProjetoAula.remover(this)">
+                            <i class="material-icons">delete</i>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </template>
+        <section class="lista-tarefas row">
+            <form name="nova-tarefa">
+                <h4>Nova Tarefa:</h4>
+                <input type="hidden" name="_id" value="">
+                <input type="hidden" name="concluida" value="">
+                <input type="hidden" name="dataCriacao" value="">
+                <div class="col m4">
+                    <input type="text" name="titulo" placeholder="Título">
+                </div>
+                <div class="col m7">
+                    <textarea name="descricao" class="materialize-textarea" rows="1" placeholder="Descrição"></textarea>
+                </div>
+                <div class="col m1">
+                    <button type="button" class="confirmar btn btn-success" onclick="ProjetoAula.adicionarTarefa()">
+                        Salvar
+                    </button>
+                    <button type="button" class="cancelar btn" onclick="ProjetoAula.limparNovaTarefa()" style="display: none;">
+                        Cancelar
+                    </button>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col m12">
+                    <ul class="tarefas"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer REST API</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="/assincroniajs.html">Assincronia JavaScript</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="/engine">Exemplo Template Engine</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/jquery.serializeObject.js"></script>
+    <script src="js/lib/materialize.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
